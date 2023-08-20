@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+.logo span {
+  color: var(--color-primary);
+}
+.icons div {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  background: var(--bg-color-2);
+  color: var(--text-color-1);
+  cursor: pointer;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.icons div:hover {
+  color: #fff;
+  background: var(--orange);
+}
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+  position: relative;
+}
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+.dropdown-menu-1 {
+  display: none;
+}
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+/* apj */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+.about_section {
+  display: flex;
+  font-display: row;
+  gap: 20px;
+}
+.barrier h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.heading p {
+  font-family: "Bree Serif", serif;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.heading {
+  background-color: rgb(241, 246, 247);
+  color: rgb(24, 24, 99);
+
+  /* align-items: center; */
+}
+.left img {
+  width: 33vw;
+  height: 58vh;
+}
+.dropdown-menu ul li a {
+  font-size: 14px;
+}
+.about_section {
+  background-color: rgb(224, 224, 251);
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.about_section .right {
+  padding-left: 40px;
+  padding-right: 50px;
+}
+.about_section .left {
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+.about_section h2 {
+  font-size: 45px;
+  color: rgb(19, 93, 132);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about_section .right p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Bree Serif", serif;
+}
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 0px;
+}
+.barrier {
+  background-color: rgb(19, 93, 132);
+  padding: 45px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  color: powderblue;
+}
+@media (max-width: 450px) {
+  .menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .menu-bar ul {
+    margin-left: 129px;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-bar ul li a {
+    font-size: 15px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .barrier h2 {
+    font-size: 30px;
+  }
+  .heading p {
+    font-family: "Bree Serif", serif;
+    font-size: 25px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .about_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .left img {
+    width: 75vw;
+    height: 43vh;
+  }
+  .right h2 {
+    font-size: 41px;
+    margin-left: 10px;
+  }
+  
+}
